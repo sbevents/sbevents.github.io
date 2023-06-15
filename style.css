@@ -11,35 +11,46 @@ body {
     height: 5px;
 }
 .menu{
-    background-color:azure;
-    float: left;
-    height:1%;
-    width:15%;
-    border-radius: 20px;
-    padding-top: auto;
-    margin: 15px;
+    background-color:rgb(121, 125, 135);
+    
+    height:max-content;
+    width:90vw;
+    border-radius: 5px;
+    margin: 2vw;
     z-index: 2;
 
 }
 .frontText{
     height: 150px;
+    width:90vw;
 }
 .title{
     margin: auto;
-    float: none;
+    
     padding: 40px;
     width:fit-content;
     
     display: block;
 }
+#BackgroundSlideshow{
+    z-index: -1;
+    float:none;
+    position: absolute;
+    top:5vw;
+    left:4vw;
+    width: 90vw;
+    
+
+}
 .topname{
-    padding: 20px;
-    float: none;
+    padding: 2px;
+  
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 500%;
+    font-size: 40px;
     margin: auto;
     color: whitesmoke;
-    padding-left: 250px;
+    width: 75vw;
+    
 }
 .context{
     height:auto;
@@ -64,13 +75,13 @@ body {
 
 }
 .menuItems{
-    padding-left: auto;
-    padding-bottom: 20px;
+    
+    padding: 20px;
     text-decoration: none;
-    color: black;
-    display: block;
+    color: rgb(255, 255, 255);
+    display:smth;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-weight:10;
+    font: weight 1px;
     text-align: center;
 }
 
@@ -84,43 +95,44 @@ body {
 }
 
 
-/*SlideShow*/
+/*SlideShow
 
-/* Styling the area of the slides */
+Styling the area of the slides
 
 #slideshow {
     overflow: hidden;
     height: 1024px;
     width: 1040px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 /* Style each of the sides
-with a fixed width and height */
+with a fixed width and height 
 
 .slide {
-    float: left;
-    height: 1024px;
-    width: 1040px;
+    
+    height:fit-content;
+    width:fit-content;
     opacity: 50%;
    
 }
 
-/* Add animation to the slides */
+/* Add animation to the slides 
 
 .slide-wrapper {
     
     /* Calculate the total width on the
-basis of number of slides */
-    width: calc(728px * 4);
+basis of number of slides 
+    width: auto;
     
     /* Specify the animation with the
-duration and speed */
+duration and speed 
     animation: slide 50s ease infinite;
 }
 
 /* Set the background color
-of each of the slides */
+of each of the slides 
 
 .slide:nth-child(1) {
     background: transparent;
@@ -139,12 +151,12 @@ of each of the slides */
 }
 
 /* Define the animation
-for the slideshow */
+for the slideshow 
 
 @keyframes slide {
     
     /* Calculate the margin-left for
-each of the slides */
+each of the slides 
     20% {
         margin-left: 0px;
     }
@@ -161,12 +173,12 @@ each of the slides */
 .slideshowbox{
     z-index: -1;
     position:absolute;
-    top: 20px; /*[wherever you want it]*/
-    left:250px; /*[wherever you want it]*/
+    top: 20px; /*[wherever you want it]
+    left:250px; /*[wherever you want it]
     margin: auto;
-    width:auto;
-    height:auto;
+    width: 100px;
+    height:200px;
 }
 .slideshowElement{
-    width:92%;
-}
+    width:40%;
+}*/
