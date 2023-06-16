@@ -38,7 +38,7 @@
 .home-branding {
   width: 120px;
   object-fit: cover;
-  
+
 }
 .home-burger-menu {
   display: flex;
@@ -2740,7 +2740,7 @@
     line-height: 18px;
   }
   .home-from {
-    width: auto;
+    /*width: auto;*/
     height: 100%;
   }
   .home-image06 {
