@@ -16,6 +16,7 @@
   padding-left: var(--dl-space-space-fiveunits);
   flex-direction: column;
   justify-content: flex-start;
+
 }
 .home-video {
   top: 0px;
@@ -25,6 +26,7 @@
   height: 100%;
   position: absolute;
   object-fit: cover;
+  opacity:90%
 }
 .home-navbar {
   width: 100%;
@@ -900,10 +902,11 @@
   font-weight: 400;
 }
 .home-caption14 {
-  color: rgb(124, 124, 128);
+  color: rgb(182, 182, 185);
   font-size: 24px;
   max-width: 600px;
   line-height: 36px;
+  filter: contrast(200%);
 }
 .home-button1 {
   display: flex;
@@ -2690,6 +2693,8 @@
   }
   .home-image05 {
     width: 300px;
+    
+    filter: brightness(40%);
   }
   .home-objectives {
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -2789,7 +2794,7 @@
     line-height: 18px;
   }
   .home-from1 {
-    width: auto;
+    /*width: auto;*/
     height: 100%;
   }
   .home-create {
