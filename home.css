@@ -311,7 +311,7 @@
   justify-content: space-between;
 }
 .home-image {
-  height: 2rem;
+  height: 4rem;
   padding-left: 1rem;
 }
 .home-menu-close {
@@ -427,6 +427,7 @@
   padding-bottom: 120px;
   justify-content: flex-start;
 }
+
 .home-caption01 {
   color: #7C7C80;
   font-size: 40px;
@@ -435,6 +436,9 @@
   font-weight: 400;
   line-height: 52px;
   margin-right: 158px;
+  padding: 1rem;
+
+  float:right
 }
 .home-statistics {
   width: 100%;
@@ -1409,10 +1413,12 @@
   flex-direction: row;
   padding-bottom: var(--dl-space-space-fiveunits);
   justify-content: center;
+  background-image: url("https://github.com/sbevents/sbevents.github.io/blob/main/img/2ndtry.jpg?raw=true");
+  background-size: contain;
 }
 .home-content10 {
   gap: var(--dl-space-space-threeunits);
-  width: 100%;
+  width: max-content;
   display: flex;
   align-items: center;
   padding-top: 120px;
@@ -1420,7 +1426,21 @@
   padding-bottom: 120px;
   justify-content: center;
   background-color: #0000F5;
+  opacity:0.8;
+  border-radius: 10px;
+  
 }
+/* @keyframes fade-in {
+  from {
+    opacity: 0;
+    }
+  to {
+    opacity: 1;
+    }
+} */
+  
+  
+
 .home-header14 {
   display: flex;
   align-items: center;
@@ -1428,7 +1448,7 @@
 }
 .home-heading09 {
   color: rgb(255, 255, 255);
-  font-size: 100px;
+  font-size: 3rem;
   font-style: normal;
   text-align: center;
   font-weight: 500;
@@ -1458,10 +1478,13 @@
 }
 .home-heading10 {
   color: rgb(255, 255, 255);
-  font-size: 60px;
+  font-size: 3rem;
   max-width: 900px;
   font-style: normal;
   font-weight: 400;
+  padding:5vw;
+  margin: 1vw;
+  display:block;
   padding-left: var(--dl-space-space-fiveunits);
   padding-right: var(--dl-space-space-fiveunits);
 }
@@ -2364,9 +2387,10 @@
     gap: var(--dl-space-space-twounits);
     padding-top: var(--dl-space-space-fourunits);
     padding-bottom: var(--dl-space-space-fourunits);
+
   }
   .home-heading09 {
-    font-size: 50px;
+    font-size: 2rem;
   }
   .home-customer {
     max-width: 1400px;
@@ -2802,13 +2826,15 @@
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-threeunits);
+    background-image: url("https://github.com/sbevents/sbevents.github.io/blob/main/img/2ndtry.jpg?raw=true");
+    background-size:200vw;
   }
   .home-content10 {
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
   }
   .home-heading09 {
-    font-size: 36px;
+    font-size: 2rem;
   }
   .home-customer {
     gap: var(--dl-space-space-threeunits);
@@ -3124,4 +3150,7 @@
   .home-button5 {
     justify-content: center;
   }
+}
+.empty_space{
+  height:6vw;
 }
