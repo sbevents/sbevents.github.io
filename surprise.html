@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Surprise for Aska</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #2b0311, #761717);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding-top: 100px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 48px;
+        }
+
+        p {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            transform: rotate(-45deg);
+            animation: heartbeat 1s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 52px;
+            height: 80px;
+            border-radius: 50px 50px 0 0;
+            background: #ff1493;
+        }
+
+        .heart::before {
+            left: 50px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        .heart::after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .animation {
+            animation-fill-mode: both;
+            animation-duration: 1s;
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+
+        .animation.active {
+            opacity: 1;
+        }
+
+        .fade-in {
+            animation-name: fade-in;
+        }
+
+        .slide-in-left {
+            animation-name: slide-in-left;
+        }
+
+        .slide-in-right {
+            animation-name: slide-in-right;
+        }
+
+        .rotate {
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-in-left {
+            0% {
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-in-right {
+            0% {
+                transform: translateX(200px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .heart-center {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .poem {
+            margin-top: 50px;
+            color: #ffffff;
+            font-size: 24px;
+            line-height: 1.6;
+        }
+
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .videos{
+            position:sticky;
+            width:60vw;
+            height:80vw;
+            border:3vw;
+            border-color: #ff84b1;
+            background-image: linear-gradient(to bottom, #1e030d, #c31818);
+            border-radius: 30px;
+            opacity: 80%;
+            
+
+        }
+        .heart-bottom{
+            position:-webkit-sticky;
+            bottom: auto;
+            left:2vw;
+            
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            margin: 2px;
+            
+
+        }
+    </style>
+</head>
+<body>
+   
+           
+    
+        
+    
+    <h1 class="animation fade-in slide-in-left active">!!Surprise You are still My Favourite!!</h1>
+    <div class="animation fade-in slide-in-right active">
+        <p>You are the sunshine that brightens my darkest days,</p>
+        <p>In your presence, my heart forever stays.</p>
+        <p>Our love, like a sonnet, beautifully rhymes,</p>
+        <p>Through eternity, enduring the test of time.</p>
+    </div>
+    <div class="heart heart-center animation heartbeat active"></div>
+    <div class="poem animation fade-in slide-in-up active">
+        <p>Your embrace, a sanctuary of solace and peace,</p>
+        <p>A love so deep, never to cease.</p>
+        <p>Roses pale in comparison to your grace,</p>
+        <p>You are my muse, my love's embrace.</p>
+    </div>
+    <iframe class="videos" allow="autoplay" allowfullscreen  src="https://clipchamp.com/watch/h20X1CLVobi/embed?autoplay=1"></iframe>
+    <!-- <div class="heart heart-bottom animation heartbeat active"></div>
+    <div class="heart heart-bottom animation heartbeat active"></div>
+    <div class="heart heart-bottom animation heartbeat active"></div> -->
+    <script>
+        const elements = document.querySelectorAll('.animation');
+
+        window.addEventListener('load', () => {
+            elements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.classList.add('active');
+                }, index * 500);
+            });
+        });
+    </script>
+</body>
+</html>

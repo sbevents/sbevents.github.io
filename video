@@ -1,0 +1,13 @@
+<iframe class="videos" allow="autoplay;" allowfullscreen  src="https://clipchamp.com/watch/h20X1CLVobi/embed"></iframe>
+.videos{
+            position:sticky;
+            width:60vw;
+            height:80vw;
+            border:3vw;
+            border-color: #ff84b1;
+            background-image: linear-gradient(to bottom, #ff84b1, #ff8f8f);
+            border-radius: 30px;
+            opacity: 80%;
+            
+
+        }
